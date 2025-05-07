@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 5000; // Set the port to listen on, defaulting 
 app.use(cors()); // Enable CORS for all routes 
 app.use(express.json()); // Parse incoming JSON requests
 
+// 🛡️ Routes
+const authRoutes = require('./routes/auth');   // ⬅️ Import your auth routes
+app.use('/api/auth', authRoutes);              // ⬅️ Mount them under /api/auth
+
 // Simple test route to check if the server is running
 app.get('/', (req, res) => {
   res.send('Backend is running!');

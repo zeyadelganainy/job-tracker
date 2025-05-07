@@ -12,7 +12,7 @@
 
 - [X] Create .env and .env.example files
 
-[ ] Set up Mongoose models (User, Application)
+- [X] Set up Mongoose models (User, Application)
 
 [ ] Implement user registration route (backend)
 

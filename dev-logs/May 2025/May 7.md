@@ -16,6 +16,9 @@ Use this template every day to track your learning, progress, and blockers.
 - [X] Initialized the front end (!!!)
 - [X] Initialized backend
 - [X] Set-up MongoDB Atlas
+- [X] Created my models for User and Application
+- [X] Created register route
+- [X] Created login route
 
 ## 💡 What I Learned
 
@@ -52,6 +55,11 @@ Use this template every day to track your learning, progress, and blockers.
     - Create `.env` file which stores my secrets like api keys and ports and stuff for security, make sure it's in the .gitignore
     - run `node index.js` to run the backend
 - Created my first MongoDB Atlas account and DB, was pretty easy and got to learn about connection strings and all.
+- Learned what mongoose is, just a lib that connects mongoDB to my codebase.
+- Learned how to make models in mongoose
+- Tested my first api route for registration, it's so rewarding to get a response back. Feels like it's alive. Does anyone else get that? *cricket noises...probably*
+- Auth system fully working now!
+
 ## 🚧 What Confused Me or Broke
 
 There's so much I don't know...I don't even know what I don't know but thank goodness I have access to chat. Also, there is SO much to do in backend like damn.
