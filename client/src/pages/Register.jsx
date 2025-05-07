@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import API from '../services/api';
 import Layout from '../components/Layout';
 
-const Login = () => {
+const Register = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
+    username: '',
     email: '',
     password: ''
   });
@@ -23,21 +24,30 @@ const Login = () => {
     setError('');
 
     try {
-      const res = await API.post('/auth/login', form);
+      const res = await API.post('/auth/register', form);
       login(res.data.token, res.data.userId, res.data.username);
       navigate('/dashboard');
     } catch (err) {
       console.error(err);
-      setError(err.response?.data?.message || 'Login failed');
+      setError(err.response?.data?.message || 'Registration failed');
     }
   };
 
   return (
     <Layout>
       <div className="max-w-md mx-auto bg-white shadow-md rounded px-8 py-6 mt-10">
-        <h2 className="text-xl font-bold mb-4 text-center">Login to Your Account</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">Create an Account</h2>
         {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            name="username"
+            type="text"
+            placeholder="Username"
+            value={form.username}
+            onChange={handleChange}
+            className="w-full border px-3 py-2 rounded"
+            required
+          />
           <input
             name="email"
             type="email"
@@ -60,19 +70,12 @@ const Login = () => {
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded"
           >
-            Login
+            Register
           </button>
         </form>
-
-        <p className="text-sm text-center mt-4">
-          Don't have an account?{' '}
-          <Link to="/register" className="text-blue-600 underline">
-            Register here
-          </Link>
-        </p>
       </div>
     </Layout>
   );
 };
 
-export default Login;
+export default Register;

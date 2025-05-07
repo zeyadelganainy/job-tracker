@@ -20,7 +20,11 @@ const userSchema = new mongoose.Schema({
   passwordHash: {
     type: String,
     required: true
-  }
+  },
+  username: {
+    type: String,
+    required: true
+  },
 }, { timestamps: true }); //Automatically adds createdAt and updatedAt to every user.
 
 // Create a Mongoose model based on the user schema

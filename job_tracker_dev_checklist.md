@@ -20,23 +20,23 @@
 
 - [X] Test authentication routes with Postman
 
-[ ] Create auth context in React
+- [X] Create auth context in React
 
-[ ] Build login and register pages (frontend)
+- [X] Build login and register pages (frontend)
 
-[ ] Connect React to Express with Axios
+- [X] Connect React to Express with Axios
 
-[ ] Protect routes using auth context and token
+- [X] Protect routes using auth context and token
 
-[ ] Create Application CRUD routes (backend)
+- [X] Create Application CRUD routes (backend)
 
-[ ] Test CRUD routes with Postman
+- [X] Test CRUD routes with Postman
 
 [ ] Build dashboard with job listing UI
 
 [ ] Add filters, sorting, and search (frontend)
 
-[ ] Add edit and delete functionality (frontend)
+- [X] Add edit and delete functionality (frontend)
 
 [ ] Style app using Tailwind or Material UI
 
