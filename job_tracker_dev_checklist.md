@@ -14,11 +14,11 @@
 
 - [X] Set up Mongoose models (User, Application)
 
-[ ] Implement user registration route (backend)
+- [X] Implement user registration route (backend)
 
-[ ] Implement login route and return JWT (backend)
+- [X] Implement login route and return JWT (backend)
 
-[ ] Test authentication routes with Postman
+- [X] Test authentication routes with Postman
 
 [ ] Create auth context in React
 

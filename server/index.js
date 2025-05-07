@@ -15,7 +15,10 @@ app.use(express.json()); // Parse incoming JSON requests
 
 // 🛡️ Routes
 const authRoutes = require('./routes/auth');   // ⬅️ Import your auth routes
+const appRoutes = require('./routes/applications'); // ⬅️ Import your application routes
 app.use('/api/auth', authRoutes);              // ⬅️ Mount them under /api/auth
+app.use('/api/applications', appRoutes);     // ⬅️ Mount them under /api/applications
+
 
 // Simple test route to check if the server is running
 app.get('/', (req, res) => {
