@@ -69,10 +69,10 @@ Use this template every day to track your learning, progress, and blockers.
 
 - There's so much I don't know...I don't even know what I don't know but thank goodness I have access to chat. Also, there is SO much to do in backend like damn.
 - I hate having to deal with packages..something always goes wrong. Tailwind gave me a hard time.
+- UI IS SO HARD TO FIX WHAT THE HELLY
 
 ## 🔁 What I Plan To Do Tomorrow
-- [ ] Set up Mongoose models (User, Application)
-- [ ] Implement user registration route (backend)
+- [ ] Polish UI
 
 ---
 
